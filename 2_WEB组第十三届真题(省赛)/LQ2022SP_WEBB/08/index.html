@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>谁最长</title>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript">
+      // 传入的参数中只有一个最长数组
+      var a1 = [12, 2];
+      var a2 = [34, 2, 3];
+      var a3 = [23, 12];
+      var newA = getMaxArrays(a1, a2, a3);
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+
+      // 传入的参数中包含多个最长数组
+      var a1 = [12, 2];
+      var a2 = [34, 2, 3];
+      var a3 = [23, 12, 3];
+      var newA = getMaxArrays(a1, a2, a3);
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+
+      // 传入的参数中所有数组等长
+      a1 = [12, 2, 3];
+      newA = getMaxArrays(a1, a2, a3);
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+
+      // 不传入任何参数
+      newA = getMaxArrays();
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+
+      // 传入的不是数组
+      newA = getMaxArrays(1, 2, 3);
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+
+      // 传入的有些不是数组
+      newA = getMaxArrays([1], 2, [3, 4]);
+      document.querySelector("#main").innerHTML +=
+        JSON.stringify(newA) + "<br/>";
+    </script>
+  </body>
+</html>

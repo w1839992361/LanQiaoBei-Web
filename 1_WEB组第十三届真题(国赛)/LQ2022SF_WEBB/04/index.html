@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>猜硬币</title>
+    <meta charset="utf-8" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <p id="gameText"></p>
+      <ul></ul>
+      <div class="killout">
+        <label for="killoutInput" style="color: #999">
+          说明：填入序号，填入你猜测有硬币的杯子，可以输入任意值，只要输入的值中包含
+          "1-9"，就会根据对应的数字打开杯子<br />
+          <input
+            id="killoutInput"
+            type="text"
+            placeholder="填写你需要查找的位置序号"
+          />
+        </label>
+      </div>
+
+      <div class="btnbox">
+        <button class="btn">确定</button>
+      </div>
+      <p id="result"></p>
+    </div>
+    <script src="./js/findCoin.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

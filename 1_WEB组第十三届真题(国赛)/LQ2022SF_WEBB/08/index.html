@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>新增地址</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- 带返回按钮的头部 -->
+      <div class="header">
+        <img class="back-btn" src="images/arrow.png" onclick="back()" />
+        <span id="main_title">新建收货地址</span>
+        <span class="blank"></span>
+      </div>
+
+      <!-- 地址、标签编辑区 -->
+      <ul class="address">
+        <li>
+          <i></i>
+          <span class="left">省市</span>
+          <div class="right">
+            <select
+              class="province"
+              name="province"
+              id="param_province"
+              onchange="provincechange()"
+            >
+              <option>请选择省份</option>
+            </select>
+            <select class="city" name="city" id="param_city">
+              <option>请选择城市</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <i>*</i>
+          <span class="left">地址</span>
+          <input
+            type="text"
+            placeholder="填写详细地址，例：XX 小区 1 幢 101"
+            id="param_address"
+          />
+        </li>
+        <li class="mark">
+          <i></i>
+          <span class="left">标签</span>
+          <a class="active">家</a>
+          <a>公司</a>
+          <a>学校</a>
+          <input type="hidden" id="param_mark" value="0" />
+        </li>
+      </ul>
+
+      <!-- 联系人信息编辑及表单提交区 -->
+      <ul class="user-info">
+        <li>
+          <i>*</i>
+          <span class="left">联系人</span>
+          <input type="text" placeholder="收货人姓名" id="param_name" />
+        </li>
+        <li>
+          <i>*</i>
+          <span class="left">手机号</span>
+          <input type="text" placeholder="收货人手机号码" id="param_phone" />
+        </li>
+        <li>
+          <a class="save-btn" onclick="saveInfo()">保存</a>
+        </li>
+      </ul>
+
+      <!-- 收获地址列表展示区 -->
+      <ul class="address-list">
+        <li>
+          <div class="show-area">
+            <label class="school">学校</label>
+            <span>浙江省杭州市</span>
+          </div>
+          <div class="show-address">
+            <span>仓前街道梦想小镇天使村</span>
+            <a><img src="./images/edit.png" /></a>
+          </div>
+          <div class="show-info">
+            <span>张三</span>
+            <span>18912345678</span>
+          </div>
+        </li>
+      </ul>
+
+      <!-- 提示弹窗 -->
+      <div class="warning-dialog" onclick="this.style.display='none';">
+        <div class="warning-msg">省市、地址以及联系人和手机号不能为空！</div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/data.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+  </body>
+</html>

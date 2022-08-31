@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <script src="./js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body onload="onload()">
+    <div class="container">
+      <h1>营销号生成器</h1>
+      <div class="row">
+        <div class="col-5">
+          <form action="javascript:void(0);" autocomplete="off">
+            <div class="form-group">
+              <lable for="subject">用户：</lable>
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                placeholder="小蓝"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <lable for="event1">课程：</lable>
+              <input
+                type="text"
+                id="event1"
+                class="form-control"
+                placeholder="Python"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <lable for="event2">平台：</lable>
+              <input
+                type="text"
+                id="event2"
+                class="form-control"
+                placeholder="蓝桥云课"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                value="生成"
+                class="btn btn-primary"
+                onclick="generate()"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="col-7" style="margin-top: 35px">
+          <textarea
+            id="result"
+            rows="8"
+            placeholder="欢迎用户小蓝在蓝桥云课学习Python课程！"
+          ></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

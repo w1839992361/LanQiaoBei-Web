@@ -1,0 +1,30 @@
+[
+  {
+    "id": 6,
+    "name": "橘子",
+    "price": 3.9,
+    "num": 1,
+    "img": "./images/img1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "车厘子",
+    "price": 138.8,
+    "num": 2,
+    "img": "./images/img2.jpg"
+  },
+  {
+    "id": 7,
+    "name": "草莓",
+    "price": 28.5,
+    "num": 3,
+    "img": "./images/img1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "菠萝",
+    "price": 9.8,
+    "num": 4,
+    "img": "./images/img2.jpg"
+  }
+]

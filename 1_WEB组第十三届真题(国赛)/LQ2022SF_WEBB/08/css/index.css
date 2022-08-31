@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #000000;
+  color: #333333;
+}
+a {
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+}
+#app {
+  width: 414px;
+  margin: 50px auto;
+  background: #f5f5f5;
+  height: 700px;
+  overflow: hidden;
+  font-size: 14px;
+  position: relative;
+}
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background: white;
+}
+.address {
+  background: white;
+  width: 88%;
+  border-radius: 8px;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  padding: 8px 18px;
+}
+.address > li,
+.user-info > li {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+li .left {
+  width: 55px;
+}
+.address select {
+  margin-right: 10px;
+  border: none;
+}
+.address input,
+.user-info input {
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #eae6e6;
+  width: 240px;
+  height: 36px;
+}
+.mark > a {
+  height: 30px;
+  width: 50px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #eae6e6;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+.active {
+  border: #03a9f4 solid 1px !important;
+}
+.user-info {
+  background: white;
+  width: 88%;
+  height: 500px;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 18px;
+}
+.save-btn {
+  display: inline-block;
+  width: 300px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  background-color: #03a9f4;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.back-btn {
+  width: 24px;
+}
+.blank {
+  width: 24px;
+  display: inline-block;
+  height: 100%;
+}
+
+.address-list {
+  background: white;
+  width: 88%;
+  border-radius: 8px;
+  margin: 20px auto;
+  margin-bottom: 10px;
+  padding: 18px;
+  display: none;
+}
+.address-list > li {
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eae6e6;
+  margin: 18px 0;
+}
+.show-area {
+  color: #8a8787;
+  font-size: 12px;
+}
+.show-area label {
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: white;
+}
+.home {
+  background-color: red;
+}
+.company {
+  background-color: #03a9f4;
+}
+.school {
+  background-color: orange;
+}
+.show-address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.show-address img {
+  width: 20px;
+}
+.show-info {
+  color: #8a8787;
+  font-size: 12px;
+}
+.warning-dialog {
+  position: absolute;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.warning-msg {
+  background-color: white;
+  width: 80%;
+  margin: 30% auto;
+  padding: 30px 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+li i {
+  color: red;
+  width: 15px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}

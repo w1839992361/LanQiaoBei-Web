@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>小兔子找胡萝卜</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div class="box">
+      <!--第一行绿色格子-->
+      <div class="container">
+        <!--初始化兔子的位置，在第一块草坪上-->
+        <div class="lump lawn active"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+        <div class="lump lawn"></div>
+
+        <!--第二列绿色格子-->
+        <div class="lump1 lawn"></div>
+        <div class="lump1 lawn"></div>
+        <div class="lump1 lawn"></div>
+        <div class="lump1 lawn"></div>
+        <div class="lump1 lawn">
+          <img src="./images/bomb.png" alt="炸弹" />
+        </div>
+
+        <div class="lump1 lawn"></div>
+        <div class="lump1 lawn"></div>
+
+        <!--第三行绿色格子-->
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn"></div>
+        <div class="lump2 lawn">
+          <img
+            src="./images/carrot.png"
+            alt="胡萝卜"
+            height="50px"
+            width="50px"
+          />
+        </div>
+      </div>
+      <div class="process">
+        <h2>兔子跳的步数</h2>
+        <label for="step">请输入兔子跳的步数：</label>
+        <input type="number" placeholder="兔子只能跳 1 或者 2 步" />
+      </div>
+    </div>
+    <div>
+      <!--开始游戏的按钮-->
+      <button class="btn" id="start" onclick="start()">开始游戏</button>
+      <!--移动步数确定按钮-->
+      <button class="btn" onclick="move()" id="move">移动</button>
+      <!--重置按钮-->
+      <button class="btn" onclick="reset()" id="reset">重置</button>
+      <!--显示游戏结果-->
+      <p class="result"></p>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

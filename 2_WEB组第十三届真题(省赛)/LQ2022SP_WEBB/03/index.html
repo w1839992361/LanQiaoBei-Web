@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>健身大调查</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- 表单内容部分 -->
+    <div id="quescontent">
+      <h1 class="title">健身调查问卷</h1>
+      <form id="myForm">
+        <div class="form-group">
+          <h3>1.基本</h3>
+          <div class="form-item">
+            <label for="height"
+              >身高：<input
+                id="height"
+                name="height"
+                type="text"
+              />&nbsp;cm</label
+            >
+          </div>
+          <div class="form-item">
+            <label for="weight">
+              体重：<input
+                id="weight"
+                name="weight"
+                type="text"
+              />&nbsp;kg</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <h3>2.你的性别是</h3>
+          <label for=""
+            ><input type="radio" name="male" id="male" value="0" />男
+          </label>
+          <label for=""
+            ><input type="radio" name="male" id="female" value="1" />女</label
+          >
+        </div>
+        <div class="form-group">
+          <h3>3.你在下面哪些地点健身锻炼</h3>
+          <div class="form-item">
+            <input type="checkbox" name="place" id="park" value="1" />公园
+          </div>
+          <div class="form-item">
+            <input type="checkbox" name="place" id="gym" value="2" />健身房
+          </div>
+          <div class="form-item">
+            <input type="checkbox" name="place" id="outdoor" value="3" />户外
+          </div>
+        </div>
+      </form>
+      <button class="btn" onclick="formSubmit()">提交</button>
+    </div>
+    <!-- 表单提交完成后显示的部分 -->
+    <div id="result" style="display: none">问卷提交完毕，感谢您的参与！</div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

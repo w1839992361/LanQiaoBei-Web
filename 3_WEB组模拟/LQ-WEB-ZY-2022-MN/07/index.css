@@ -1,0 +1,64 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #fff;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card-name {
+  color: var(--gold);
+  font-size: 32px;
+}
+
+body {
+  background: var(--wine-red);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background: var(--snow);
+  font-size: 35px;
+  text-align: center;
+  padding: 0.5em;
+  position: relative;
+  margin-bottom: 1em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+button {
+  border: none;
+  background-color: var(--gold);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*表单样式*/
+#allform {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#allform fieldset {
+  position: relative;
+  width: 50%;
+  background: rgb(158, 200, 248);
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  padding: 20px 30px;
+  margin: 0 auto;
+}
+
+/*隐藏 fieldset 元素区域*/
+#allform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+/*输入框的样式*/
+#allform input {
+  padding: 15px;
+  border: 1px solid #5bbbe7;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  color: black;
+  font-size: 17px;
+}
+
+/*按钮样式*/
+#allform .action-button {
+  width: 100px;
+  background: #25a6da;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#allform .action-button-previous {
+  width: 100px;
+  background: #d9d7f1;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+/*表单标题样式*/
+.form-title {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.74);
+  margin-bottom: 10px;
+}
+
+/*步骤条样式*/
+#progressbar {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  counter-reset: step;
+  width: 80%;
+}
+
+#progressbar li {
+  list-style-type: none;
+  float: left;
+  color: rgba(31, 8, 8, 0.507);
+  font-size: 10px;
+  width: 33.33%;
+
+  position: relative;
+  letter-spacing: 1px;
+}
+
+#progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 24px;
+  height: 24px;
+  display: block;
+  font-size: 15px;
+  color: black;
+  border-radius: 25px;
+  margin: 0 auto 10px auto;
+  background: rgba(67, 87, 90, 0.186);
+}
+
+#progressbar li:after {
+  position: absolute;
+  content: "";
+  width: 88%;
+  height: 2px;
+  background: rgba(19, 18, 18, 0.652);
+  left: -44%;
+  top: 9px;
+}
+
+#progressbar li:first-child:after {
+  content: none;
+}
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #5bbbe7;
+  color: white;
+}

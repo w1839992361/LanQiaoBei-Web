@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.item {
+  display: block;
+  width: 66px;
+  height: 66px;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+[class$="box"] {
+  width: 204px;
+  height: 204px;
+  margin: 20px;
+  background-image: linear-gradient(
+    rgb(252, 213, 136) 33.3%,
+    #fff493 0,
+    #fdf45d 66.6%,
+    #f8da47 0
+  );
+  background-size: 6px 6px;
+}
+
+/* TODO：待补充代码 */

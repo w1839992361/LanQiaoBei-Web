@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <p id="result1"></p>
+      <p id="result2"></p>
+      <p id="result3"></p>
+    </div>
+    <script src="./js/index.js"></script>
+    <script>
+      let r1 = document.getElementById("result1");
+      let r2 = document.getElementById("result2");
+      let r3 = document.getElementById("result3");
+      r1.innerHTML = `2 阶梯子，兔子有 ${climbStairs(2)} 种跳法到达月球。`;
+      r2.innerHTML = `3 阶梯子，兔子有 ${climbStairs(3)} 种跳法到达月球。`;
+      r3.innerHTML = `4 阶梯子，兔子有 ${climbStairs(4)} 种跳法到达月球。`;
+    </script>
+  </body>
+</html>

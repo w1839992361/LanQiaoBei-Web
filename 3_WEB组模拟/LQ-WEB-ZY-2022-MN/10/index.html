@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>购物车</title>
+	<script src="./js/vue.js"></script>
+	<script src="./js/axios.js"></script>
+	<style>
+		h4 {
+			text-align: center;
+		}
+
+		.box-card {
+			width: 200px;
+			overflow: hidden;
+			margin: 0 auto;
+		}
+
+		.box-card img {
+			width: 100%;
+			height: auto;
+
+		}
+
+		.bottom {
+			margin: 8px 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container" id="app">
+		<h4>购物车</h4>
+		<!--TODO 购物车列表 -->
+		<div v-for="item in carlist" key="item.id">
+			<div class="box-card">
+				<!-- 商品图片 img -->
+				<img>
+				<div>
+					<span>
+						<!-- 商品名称 name -->
+					</span>
+					<div class="bottom clearfix">
+						<button type="text" class="button">+</button>
+						<button type="text" class="button">
+							<!-- 商品数量 num -->
+						</button>
+						<button type="text" class="button">-</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<!-- 引入组件库 -->
+	<script>
+		new Vue({
+			el: "#app",
+			data: {
+				carlist: [] //购物车列表
+			},
+			async created() {
+				//TODO 使用axios  请求购物车列表
+			},
+		})
+
+
+	</script>
+</body>
+
+
+
+
+</html>

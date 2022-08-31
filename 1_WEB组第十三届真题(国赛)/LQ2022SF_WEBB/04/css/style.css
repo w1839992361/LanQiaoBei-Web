@@ -1,0 +1,258 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+#content {
+  padding-top: 40px;
+}
+
+#content ul {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnbox {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content ul li {
+  margin: 20px;
+  width: 8vw;
+  height: 8vw;
+}
+
+#content ul li:last-child {
+  margin-right: 0;
+}
+
+#content ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  perspective: 800px;
+}
+
+#content ul li a > div {
+  position: absolute;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+#content ul li a div:first-child {
+  display: flex;
+  justify-content: center;
+  transform: rotateY(0);
+  z-index: 2;
+}
+
+#content ul li a div:last-child {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  perspective: 800px;
+}
+
+#content ul li a > div {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  transition: 0.8s ease-in-out;
+  backface-visibility: hidden;
+}
+
+#content ul li a div:first-child {
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+#content ul li a div h1 {
+  text-align: center;
+  line-height: 90px;
+  font-size: 12px;
+}
+
+#content ul li a div img {
+  max-width: 100%;
+}
+
+.rotatey30 {
+  transform: translate(0, -15px) rotate(-30deg) !important;
+}
+
+.btn,
+.btn-all {
+  margin-top: 60px;
+  display: inline-block;
+  color: #0099cc;
+  background: #2e7eee;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.cardnum {
+  position: absolute;
+  font-size: 12px;
+  left: 45%;
+  top: 10px;
+}
+
+#gameText,
+#result {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.killout {
+  text-align: center;
+}
+
+.killout input {
+  display: inline-block;
+}
+
+.z {
+  position: relative;
+}
+
+.z .cup,
+.b .cup {
+  transform: rotate(180deg);
+  display: inline-block;
+  transition: all 1s ease-in-out;
+}
+
+.coin {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  left: 50%;
+  bottom: 0;
+  z-index: -1;
+}
+
+sup {
+  text-align: center;
+  line-height: 20px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  font-size: 12px;
+  z-index: 10000;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -10px;
+  border-radius: 50%;
+}
+
+#killoutInput {
+  width: 200px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  font-variant: tabular-nums;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  padding: 4px 11px;
+  color: #000000d9;
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all 0.3s;
+}

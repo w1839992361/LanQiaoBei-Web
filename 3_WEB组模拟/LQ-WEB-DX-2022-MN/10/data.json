@@ -1,0 +1,221 @@
+[
+  {
+    "icon": "",
+    "name": "_home",
+    "meta": {
+      "title": "首页"
+    }
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "配置管理",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicApp",
+        "meta": {
+          "title": "应用系统维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicSubApp",
+        "meta": {
+          "title": "子应用系统维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicModule",
+        "meta": {
+          "title": "模块维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicParameterCatalog",
+        "meta": {
+          "title": "应用系统参数配置",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicAttributeDefinition",
+        "meta": {
+          "title": "属性定义",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicMarkColumn",
+        "meta": {
+          "title": "字段修改痕迹保留配置",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicMarkRecord",
+        "meta": {
+          "title": "重要数据修改查询",
+          "icon": ""
+        }
+      }
+    ]
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "医疗机构",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicOrg",
+        "meta": {
+          "title": "医疗机构维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicDivision",
+        "meta": {
+          "title": "院区信息维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicDept",
+        "meta": {
+          "title": "部门信息维护",
+          "icon": ""
+        }
+      }
+    ]
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "用户信息",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicUser",
+        "meta": {
+          "title": "用户信息维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicTestUser",
+        "meta": {
+          "title": "测试用户维护",
+          "icon": ""
+        }
+      }
+    ]
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "权限设置",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicRole",
+        "meta": {
+          "title": "角色信息维护",
+          "icon": ""
+        }
+      }
+    ]
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "安全管理",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicLoginLog",
+        "meta": {
+          "title": "系统登录信息处理",
+          "icon": ""
+        }
+      }
+    ]
+  },
+  {
+    "icon": "ios-home-outline",
+    "name": "",
+    "meta": {
+      "title": "数据字典",
+      "icon": "ios-home-outline"
+    },
+    "children": [
+      {
+        "icon": "",
+        "name": "EBasicDictionaryCatalog",
+        "meta": {
+          "title": "公共数据字典维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicNativePlace",
+        "meta": {
+          "title": "行政区划维护",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicPywbAutocomplete",
+        "meta": {
+          "title": "拼音五笔自动补齐",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicDmsCorrection",
+        "meta": {
+          "title": "数据修订",
+          "icon": ""
+        }
+      },
+      {
+        "icon": "",
+        "name": "EBasicDmsApprove",
+        "meta": {
+          "title": "审批申请",
+          "icon": ""
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,103 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-color: #2d2d2d;
+}
+#box {
+  width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#box .head {
+  background-color: #dff0d8;
+  padding: 20px;
+}
+#box .head h2 {
+  color: #3c763d;
+}
+#box .head p {
+  font-size: 12px;
+  color: #3c763d;
+  line-height: 30px;
+}
+#box .head .input {
+  height: 30px;
+  line-height: 30px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+#box .head .input span {
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  float: left;
+}
+#box .head .input input {
+  float: left;
+  width: calc(100% - 102px);
+  border: none;
+  outline: none;
+  height: 30px;
+  text-indent: 20px;
+}
+#box .head .input span:first-child {
+  border-right: 1px solid #ccc;
+}
+#box .head .input span:last-child {
+  border-left: 1px solid #ccc;
+  cursor: pointer;
+}
+#box .list {
+  padding: 20px;
+}
+#box .list li {
+  border-bottom: 1px dashed #ccc;
+  height: 40px;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+#box .list li:last-child {
+  line-height: 40px;
+  border-bottom: none;
+  padding: 0 20px;
+}
+#box .list li span {
+  float: left;
+  height: 20px;
+  line-height: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+#box .list li span:first-child {
+  width: 50px;
+  border-right: 1px solid #ccc;
+  margin-right: 10px;
+}
+#box .list li span:last-child {
+  width: 30px;
+  background: url(../img/icon.png) no-repeat center center;
+  background-size: 50%;
+  float: right;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#box .list li:last-child b:first-child {
+  float: left;
+}
+#box .list li:last-child b:last-child {
+  float: right;
+  cursor: pointer;
+}

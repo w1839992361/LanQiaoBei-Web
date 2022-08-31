@@ -1,0 +1,75 @@
+.process {
+  display: inline-block;
+  width: 30rem;
+  height: 31.9rem;
+  border: 1px solid #b3e183;
+  position: absolute;
+  overflow: auto;
+  text-align: center;
+  font-size: 18px;
+}
+input {
+  height: 30px;
+  border: 1px solid #b3e183;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  width: max-content;
+  color: rgb(151, 151, 151);
+}
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: inline-block;
+  background-color: #edf6e5;
+}
+.lump {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #b3e183;
+  border: 1px solid #b3e183;
+  position: relative;
+}
+.lump1 {
+  margin-left: 44%;
+  margin-bottom: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: #b3e183;
+  border: 1px solid #b3e183;
+  position: relative;
+}
+.lump2 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #b3e183;
+  border: 1px solid #b3e183;
+}
+.lawn:nth-child(16) {
+  margin-left: 392px;
+}
+.btn {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  margin: 20px 600px;
+}
+.active {
+  background-image: url("../images/rabbit.png");
+  background-size: 50px;
+}
+p {
+  margin-left: 550px;
+}
+#reset {
+  display: none;
+}
+#move {
+  display: none;
+}

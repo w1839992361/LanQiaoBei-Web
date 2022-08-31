@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>任务管理器</title>
+
+    <link type="text/css" href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="box">
+      <div class="head">
+        <h2>Todos</h2>
+        <p>罗列日常计划，做一个时间管理大师！</p>
+        <div class="input">
+          <span>内容</span>
+          <input type="text" placeholder="请输入你要做的事" />
+          <span id="add">确认</span>
+        </div>
+      </div>
+
+      <ul class="list">
+        <li>暂无数据</li>
+        <li>
+          <!-- 前面的序号 -->
+          <span class="xh">1</span>
+          <!-- 列表内容 -->
+          <span>学习</span>
+          <!-- 删除按钮 -->
+          <span class="qc"></span>
+        </li>
+        <li>
+          <span class="xh">2</span>
+          <span>吃饭</span>
+          <span class="qc"></span>
+        </li>
+        <li>
+          <span class="xh">3</span>
+          <span>睡觉</span>
+          <span class="qc"></span>
+        </li>
+        <li>
+          <b> 总数：3 </b>
+          <b id="clear">清除</b>
+        </li>
+      </ul>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+      var top = new Vue({
+        el: "#box",
+        // 在此处补全代码，实现所需功能
+      });
+    </script>
+  </body>
+</html>

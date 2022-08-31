@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>test</title>
+    <script src="./js/vue.js"></script>
+    <script src="./js/axios.min.js"></script>
+    <style>
+      input {
+        width: 200px;
+        height: 32px;
+        padding-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 需求：输入待查找的字段，输出包含该字段的所有菜单数据。
+    1、若该菜单有父级菜单，则返回其父级菜单及同胞菜单。
+    2、若该菜单有子级菜单，则返回该菜单及其下子级菜单。
+    3、若该菜单既无父级也无子级，则返回菜单本身即可。
+    测试字段：查询、首页、管理、配置、维护 -->
+    <div id="app">
+      <input type="text" placeholder="请输入要搜索的菜单内容" />
+      <ul>
+        <li>
+          <span style="background-color: yellow">一级菜单</span>
+          <ul>
+            <li>
+              <span style="background-color: yellow">二级菜单</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>

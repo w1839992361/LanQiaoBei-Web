@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="vue.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="search-wrapper">
+        <input type="text" v-model="search" placeholder="请搜索" />
+        <label>搜索内容：</label>
+      </div>
+      <div class="wrapper">
+        <div class="card" v-for="post in filteredList">
+          <a v-bind:href="post.link" target="_blank">
+            <img v-bind:src="post.img" />
+            {{ post.title }}
+          </a>
+        </div>
+      </div>
+    </div>
+    <script>
+      class Post {
+        constructor(title, link, img) {
+          this.title = title;
+          this.link = link;
+          this.img = img;
+        }
+      }
+
+      const app = new Vue({
+        el: "#app",
+        data: {
+          search: "",
+          postList: [
+            new Post("小猫咪", "#", "./images/cat.png"),
+            new Post("小狗狗", "#", "./images/dog.png"),
+            new Post("北极熊", "#", "./images/bear.png"),
+            new Post("狮子", "#", "./images/lion.png"),
+            new Post("小鸟", "#", "./images/birds.png"),
+            new Post("狐狸", "#", "./images/fox.png"),
+          ],
+        },
+        computed: {
+          filteredList() {
+            // TODO：请补充代码
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
